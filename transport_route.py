@@ -3,7 +3,7 @@ Route planner for the transports of Gorini Piante.
 The user gives input through the 'Costi.xlsx' file: names of the companies we have to deliver to 
 (which usually has a good matching with 'Acronimo' in the customer database). The program retrieves
 detailed address information and decides optimal unloading order.
-A mail for marta transport is printed automatically. The route is printed in an html file.
+A mail template is printed automatically. The route is printed in an html file.
 
 TODO
     - handle all errors (nan coordinates, invalid keys etc)
@@ -413,3 +413,4 @@ if __name__ == "__main__":
     except Exception:
         logging.exception("Chiama Matteo")
         sys.exit(1)
+
